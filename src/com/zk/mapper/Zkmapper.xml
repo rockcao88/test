@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zk.mapper.Zkmapper">
+
+<select id="getInfo" resultType="om.zk.bean.Zkinfo">
+	select * from zabbix_items_zk where item=#{item} 
+</select>
+
+
+
+</mapper>
